@@ -1,90 +1,90 @@
 {
     "2024": [
         {
-            "monthName": "Febrero",
+            "monthName": "February",
             "firstDayMonth": "4",
             "daysMonth": "29",
             "nameDay": [
-                "Lunes",
-                "Martes",
-                "Miércoles",
-                "Jueves",
-                "Viernes",
-                "Sábado",
-                "Domingo"
+                "Monday",
+                "Tuesday",
+                "Wednesday",
+                "Thursday",
+                "Friday",
+                "Saturday",
+                "Sunday"
             ],
             "nameMonth": [
-                "Enero",
-                "Febrero",
-                "Marzo",
-                "Abril",
-                "Mayo",
-                "Junio",
-                "Julio",
-                "Agosto",
-                "Septiembre",
-                "Octubre",
-                "Noviembre",
-                "Diciembre"
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
             ],
             "phase": {
                 "1": {
-                    "phaseName": "Menguante",
+                    "phaseName": "Waning",
                     "isPhaseLimit": false,
                     "lighting": 64.42789921737861,
-                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A -13.72,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A -13.72,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" /><a xlink:href=\"https://www.icalendar37.net/lunar/app/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" /></a></g></svg>",
                     "svgMini": false,
                     "timeEvent": false,
                     "dis": 401252.6682397556,
                     "dayWeek": 3,
-                    "npWidget": "Menguante (64%)"
+                    "npWidget": "Waning (64%)"
                 },
                 "2": {
-                    "phaseName": "Menguante",
+                    "phaseName": "Waning",
                     "isPhaseLimit": false,
                     "lighting": 54.923759419728924,
-                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A -3.92,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A -3.92,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" /><a xlink:href=\"https://www.icalendar37.net/lunar/app/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" /></a></g></svg>",
                     "svgMini": false,
                     "timeEvent": false,
                     "dis": 398064.8468059912,
                     "dayWeek": 4,
-                    "npWidget": "Menguante (54%)"
+                    "npWidget": "Waning (54%)"
                 },
                 "3": {
-                    "phaseName": "Cuarto menguante",
+                    "phaseName": "Last Quarter",
                     "isPhaseLimit": 4,
                     "lighting": 45.01122017644028,
-                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 4.9,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
-                    "svgMini": "<svg xmlns='http:\/\/www.w3.org\/2000\/svg' width='20' height='20' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48'  stroke-width='0' fill='#111111' \/><path d='M50,2 A48,48 0 0,0 50,98'  stroke-width='0' fill='#FFFF88' \/><\/svg>",
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 4.9,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" /><a xlink:href=\"https://www.icalendar37.net/lunar/app/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" /></a></g></svg>",
+                    "svgMini": "<svg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48'  stroke-width='0' fill='#111111' /><path d='M50,2 A48,48 0 0,0 50,98'  stroke-width='0' fill='#FFFF88' /></svg>",
                     "timeEvent": "0:20:08",
                     "dis": 394149.6732060724,
                     "dayWeek": 5,
-                    "npWidget": "Cuarto menguante"
+                    "npWidget": "Last Quarter"
                 },
                 "4": {
-                    "phaseName": "Menguante",
+                    "phaseName": "Waning",
                     "isPhaseLimit": false,
                     "lighting": 35.009800069738986,
-                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 14.7,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 14.7,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" /><a xlink:href=\"https://www.icalendar37.net/lunar/app/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" /></a></g></svg>",
                     "svgMini": false,
                     "timeEvent": false,
                     "dis": 389671.9409194724,
                     "dayWeek": 6,
-                    "npWidget": "Menguante (35%)"
+                    "npWidget": "Waning (35%)"
                 },
                 "5": {
-                    "phaseName": "Menguante",
+                    "phaseName": "Waning",
                     "isPhaseLimit": false,
                     "lighting": 25.31572066065327,
-                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 24.5,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 24.5,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" /><a xlink:href=\"https://www.icalendar37.net/lunar/app/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" /></a></g></svg>",
                     "svgMini": false,
                     "timeEvent": false,
                     "dis": 384845.4588317965,
                     "dayWeek": 0,
-                    "npWidget": "Menguante (25%)"
+                    "npWidget": "Waning (25%)"
                 },
                 "6": {
-                    "phaseName": "Menguante",
+                    "phaseName": "Waning",
                     "isPhaseLimit": false,
                     "lighting": 16.41951781319332,
                     "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 33.32,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
@@ -92,10 +92,10 @@
                     "timeEvent": false,
                     "dis": 379926.1260930855,
                     "dayWeek": 1,
-                    "npWidget": "Menguante (16%)"
+                    "npWidget": "Waning (16%)"
                 },
                 "7": {
-                    "phaseName": "Menguante",
+                    "phaseName": "Waxing",
                     "isPhaseLimit": false,
                     "lighting": 8.899528014949842,
                     "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 41.16,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
@@ -103,7 +103,7 @@
                     "timeEvent": false,
                     "dis": 375197.14380148804,
                     "dayWeek": 2,
-                    "npWidget": "Menguante (8%)"
+                    "npWidget": "Waxing (8%)"
                 },
                 "8": {
                     "phaseName": "Menguante",
@@ -128,7 +128,7 @@
                     "npWidget": "Menguante (0%)"
                 },
                 "10": {
-                    "phaseName": "Luna nueva",
+                    "phaseName": "New Moon",
                     "isPhaseLimit": 1,
                     "lighting": 0.35862881449449935,
                     "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 49,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
@@ -136,7 +136,7 @@
                     "timeEvent": "0:00:44",
                     "dis": 364924.9031164658,
                     "dayWeek": 5,
-                    "npWidget": "Luna nueva"
+                    "npWidget": "New Moon"
                 },
                 "11": {
                     "phaseName": "Creciente",
@@ -194,7 +194,7 @@
                     "npWidget": "Creciente (37%)"
                 },
                 "16": {
-                    "phaseName": "Cuarto creciente",
+                    "phaseName": "First Quarter",
                     "isPhaseLimit": 2,
                     "lighting": 48.161915434991826,
                     "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 1.96,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
@@ -202,7 +202,7 @@
                     "timeEvent": "16:02:06",
                     "dis": 373858.778147561,
                     "dayWeek": 4,
-                    "npWidget": "Cuarto creciente"
+                    "npWidget": "First Quarter"
                 },
                 "17": {
                     "phaseName": "Creciente",
@@ -282,14 +282,14 @@
                     "npWidget": "Creciente (98%)"
                 },
                 "24": {
-                    "phaseName": "Luna llena",
+                    "phaseName": "Full Moon",
                     "isPhaseLimit": 3,
                     "lighting": 99.99511405280604,
                     "svgMini": "<svg xmlns='http:\/\/www.w3.org\/2000\/svg' width='20' height='20' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48'  stroke-width='0' fill='#FFFF88' \/><path d='M50,2 A48,48 0 0,0 50,98'  stroke-width='0' fill='#FFFF88' \/><\/svg>",
                     "timeEvent": "13:31:19",
                     "dis": 404442.14635148045,
                     "dayWeek": 5,
-                    "npWidget": "Luna llena"
+                    "npWidget": "Full Moon"
                 },
                 "25": {
                     "phaseName": "Menguante",
@@ -345,15 +345,15 @@
             "month": 2,
             "year": 2024,
             "receivedVariables": {
-                "lang": "es",
+                "lang": "en",
                 "month": "2",
                 "year": "2024"
             },
-            "lang": "es",
-            "language": "Español",
+            "lang": "en",
+            "language": "English",
             "title": [
-                "Calencario lunar",
-                "Fases de la Luna"
+                "Lunar Calendar",
+                "Moon Phases"
             ],
             "autor": "wdisseny.com",
             "version": "2"
