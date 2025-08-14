@@ -1,0 +1,130 @@
+---
+import type { GetStaticPaths } from "astro";
+import Layout from "@/layouts/Layout.astro";
+import Moon from "@/components/Moon.astro";
+import { getMoonData } from "@/services/moonApi";
+import { i18n } from "@/utils/i18n.utils";
+
+const yearMonthDay = Astro.params.yearMonthDay;
+
+let [year, month, day] = yearMonthDay.split("-").map(Number) || [
+  new Date().getFullYear(),
+  new Date().getMonth() + 1,
+  new Date().getDate(),
+];
+
+const moonData = await getMoonData({ year, month });
+
+const todayMoon = moonData.phase[String(day)];
+
+const timeEvent = moonData.phase[String(day)].timeEvent;
+const hours = timeEvent ? Number(timeEvent.split(":")[0]) - 8 : 0;
+const minutes = timeEvent ? Number(timeEvent.split(":")[1]) : 0;
+
+const date = new Date(
+  year,
+  month - 1,
+  hours < 0 ? day + 1 : day,
+  hours,
+  minutes
+);
+
+const phaseLimits = Object.entries(moonData.phase).filter(
+  ([, phase]) => phase.isPhaseLimit
+);
+
+// Paths will look like /day/2023-1-1 for 2023, 2024 and 2025 years for now
+export const getStaticPaths = (() => {
+  const years = [2023, 2024, 2025];
+
+  const paths = years
+    .map((year) =>
+      Array.from({ length: 12 }, (_, i) => {
+        const month = i + 1;
+        const daysInMonth = new Date(year, month, 0).getDate();
+
+        return Array.from({ length: daysInMonth }, (_, i) => {
+          const day = i + 1;
+          return {
+            params: {
+              yearMonthDay: `${year}-${month}-${day}`,
+            },
+          };
+        });
+      }).flat()
+    )
+    .flat();
+  return paths;
+}) satisfies GetStaticPaths;
+---
+
+<Layout title="Magic Moon" transition:persist>
+  <section
+    class="w-full h-[100dvh] flex flex-col justify-between items-center"
+    transition:animate="fade"
+  >
+    <header class="sticky top-0 w-full left-0 justify-center flex">
+      <div class="flex justify-between px-4 py-3 max-w-[1000px] w-full">
+        <a href="/">
+          <h2 class="text-white text-2xl">Magic Moon</h2>
+        </a>
+        <a
+          href={`/month/${year}-${month}`}
+          class="text-white text-sm py-1 px-3 ring-white ring-1 rounded-md h-auto my-auto"
+        >
+          {i18n["es"].viewMonth}
+        </a>
+      </div>
+    </header>
+    <main class="w-full flex justify-center items-center flex-col">
+      <div class="w-3/5 max-w-[500px] relative">
+        <Moon
+          phaseName={todayMoon.phaseName}
+          percentage={todayMoon.lighting}
+          shadow={true}
+          animate={true}
+        />
+      </div>
+      <h1 class="text-white text-2xl">
+        {date.toLocaleDateString("es-US", { day: "numeric", month: "long" })}
+        {
+          todayMoon.timeEvent && (
+            <span class="text-gray-500 text-sm">
+              {date.toLocaleTimeString("es-US", {
+                hour: "numeric",
+                minute: "numeric",
+              })}
+            </span>
+          )
+        }
+      </h1>
+      <h2 class="text-white text-4xl my-5">
+        {i18n["es"][todayMoon.phaseName]}
+        <span class="text-xl text-white/50">
+          | {Math.floor(todayMoon.lighting)}%
+        </span>
+      </h2>
+      <div class="grid grid-cols-4 gap-2 p-2 w-full max-w-[350px]">
+        {
+          phaseLimits.map(([monthDay, phase]) => (
+            <a
+              class="ring-gray-500/30 ring-1 rounded text-white/50 flex flex-col items-center"
+              href={`/day/${year}-${month}-${monthDay}`}
+            >
+              <span>{monthDay}</span>
+              <div class="w-4/5 max-w-[500px]">
+                <Moon phaseName={phase.phaseName} percentage={phase.lighting} />
+              </div>
+              <span class="text-center leading-4 capitalize mb-2 text-xs px-4">
+                {i18n["es"][phase.phaseName]}
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </main>
+    <footer class="flex justify-center w-full text-white/35 text-xs py-2">
+      By &nbsp;<a href="https://github.com/wbenafi" target="_blank" class="text-white/50 font-semibold hover:text-white/60">Walter Benavides</a>
+    </footer>
+  </section>
+</Layout>

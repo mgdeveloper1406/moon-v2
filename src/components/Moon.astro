@@ -1,0 +1,196 @@
+---
+import { PhaseName } from "@/utils/types.utils";
+
+interface Props {
+  phaseName: PhaseName;
+  percentage: number;
+  shadow?: boolean;
+  animate?: boolean;
+}
+
+const { phaseName, percentage, shadow, animate } = Astro.props;
+
+const isWaning = [PhaseName.Waning, PhaseName.LastQuarter, PhaseName.NewMoon].includes(phaseName);
+const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phaseName)
+  ? 50
+  : Math.floor(Number(percentage) - 50) * 0.84 + 0.16;
+---
+
+<figure class="relative p-[10%] overflow-hidden w-full aspect-square stage">
+  <div
+    id="moon"
+    class="m-auto flex justify-center items-center"
+    style={`
+      ${shadow ? 'box-shadow: 0px 0px .2em .1em #ffffff33;' : ''}
+      ${animate ? 'animation: move-map 120s infinite linear;' : 'background-position-x: 60%'}
+    `}
+  ></div>
+
+  <div
+    id="moon-shape"
+    class:list={[
+      "w-full h-full absolute top-0 left-0",
+      { "rotate-[-0deg]": ![PhaseName.LastQuarter, PhaseName.FirstQuarter].includes(phaseName) },
+    ]}
+    style="transform: rotate(0deg);"
+  >
+    <svg width="100%" height="100%" viewBox="0 0 100 100">
+      <filter id="dropshadow" height="105%">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="2.5"></feGaussianBlur>
+      </filter>
+      <path
+        d={`M 50 1 A 49,49 0
+            ${isWaning ? "0,1" : "1,0"}
+            50,100 A
+            ${percentageToRender},50
+            0
+            ${(isWaning && percentage < 50) || (!isWaning && percentage > 50) ? "0,1" : "1,0"}
+            50,1`}
+        stroke-width="0" stroke="none" fill="#000000F1" style="filter:url(#dropshadow)" />
+    </svg>
+  </div>
+</figure>
+
+<section class="info">
+  <div class="row">
+    <span class="phase">{String(phaseName)}</span>
+    <span class="pct">| {Math.round(percentage)}%</span>
+  </div>
+  <div class="sub" id="moonTimes">Rise — / Set —</div>
+  <div class="tiny" id="moonLocHint">Using your location if permitted.</div>
+
+  <div class="list">
+    <div class="list-title">Next phases</div>
+    <ul id="nextPhases" class="ul"></ul>
+  </div>
+</section>
+
+<style>
+  .stage { width: 100%; display: inline-block; perspective: 400%; perspective-origin: 50% 50%; }
+  #moon { width: 100%; height: 100%; background-image: url("/moon.webp"); background-position-y: center; background-size: 250% auto; border-radius: 50%; }
+  @keyframes move-map { 0% { background-position-x: -67%; } 100% { background-position-x: 100%; } }
+  .info { text-align: center; margin-top: 10px; color: #e5e7eb; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; }
+  .row { font-size: 28px; font-weight: 800; }
+  .pct { font-size: 16px; opacity: .85; margin-left: 8px; }
+  .sub { margin-top: 6px; font-size: 14px; color: #a5b4fc; }
+  .tiny { margin-top: 4px; font-size: 12px; color: #94a3b8; }
+  .list { margin: 14px auto 0; max-width: 560px; background:#0b1220; border:1px solid #1f2937; border-radius:12px; padding:10px 12px; }
+  .list-title { color:#93c5fd; font-weight:800; font-size:14px; margin-bottom:6px; text-transform:uppercase; letter-spacing:.4px; }
+  .ul { list-style:none; padding:0; margin:0; display:grid; grid-template-columns: 1fr 1fr; gap:6px 12px; }
+  .ul li { display:flex; justify-content:space-between; font-size:14px; background:#0f172a; border:1px solid #1f2937; border-radius:10px; padding:8px 10px; }
+  .ul .label { color:#c7d2fe; font-weight:700; }
+  .ul .value { color:#e5e7eb; font-variant-numeric: tabular-nums; }
+</style>
+
+<script>
+  // @ts-nocheck  ← por si "astro check" intenta tipar este bloque igualmente
+  import SunCalc from 'suncalc';
+
+  const shape   = document.getElementById('moon-shape');
+  const timesEl = document.getElementById('moonTimes');
+  const hintEl  = document.getElementById('moonLocHint');
+  const listEl  = document.getElementById('nextPhases');
+
+  function setRotationAndTimes(lat = 0, lon = 0) {
+    const now = new Date();
+    const ill = SunCalc.getMoonIllumination(now);
+    const pos = SunCalc.getMoonPosition(now, lat, lon);
+    const angleRad = -(pos.parallacticAngle + ill.angle);
+    const angleDeg = angleRad * 180 / Math.PI;
+    if (shape) shape.style.transform = `rotate(${angleDeg}deg)`;
+
+    try {
+      const mt = SunCalc.getMoonTimes(now, lat, lon);
+      const riseTxt = mt.rise ? new Date(mt.rise).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—';
+      const setTxt  = mt.set  ? new Date(mt.set ).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—';
+      if (timesEl) timesEl.textContent = `Rise ${riseTxt} / Set ${setTxt}`;
+    } catch {
+      if (timesEl) timesEl.textContent = `Rise — / Set —`;
+    }
+  }
+
+  const TARGETS = [
+    { key: 'New Moon',        value: 0.0 },
+    { key: 'First Quarter',   value: 0.25 },
+    { key: 'Full Moon',       value: 0.5 },
+    { key: 'Last Quarter',    value: 0.75 },
+  ];
+
+  function wrapErr(x) {
+    x = ((x % 1) + 1) % 1;
+    return x > 0.5 ? x - 1 : x;
+  }
+
+  async function findNextPhaseDates() {
+    const out = [];
+    const start = new Date();
+
+    for (const t of TARGETS) {
+      let minErr = 1e9;
+      let candidate = new Date(start);
+
+      // barrido 60 días, 4 muestras por día
+      for (let d = 0; d < 60; d++) {
+        const test = new Date(start.getTime() + d * 86400000);
+        for (let h = 0; h < 24; h += 6) {
+          const dt = new Date(test.getFullYear(), test.getMonth(), test.getDate(), h);
+          const phase = SunCalc.getMoonIllumination(dt).phase;
+          const err = Math.min(Math.abs(phase - t.value), 1 - Math.abs(phase - t.value));
+          if (err < minErr) { minErr = err; candidate = dt; }
+        }
+      }
+      // afinado binario ±36h
+      let lo = new Date(candidate.getTime() - 36 * 3600 * 1000);
+      let hi = new Date(candidate.getTime() + 36 * 3600 * 1000);
+      for (let i = 0; i < 22; i++) {
+        const mid = new Date((lo.getTime() + hi.getTime()) / 2);
+        const phaseMid = SunCalc.getMoonIllumination(mid).phase;
+        const errMid = wrapErr(phaseMid - t.value);
+        const errLo  = wrapErr(SunCalc.getMoonIllumination(lo).phase - t.value);
+        if (Math.abs(errLo) < Math.abs(errMid)) hi = mid; else lo = mid;
+      }
+      const best = new Date((lo.getTime() + hi.getTime()) / 2);
+      out.push({ label: t.key, date: best });
+    }
+    return out.sort((a,b) => a.date - b.date);
+  }
+
+  function renderNextPhases(list) {
+    if (!listEl) return;
+    listEl.innerHTML = '';
+    list.slice(0, 4).forEach((item) => {
+      const li = document.createElement('li');
+
+      const label = document.createElement('span');
+      label.className = 'label';
+      label.textContent = item.label;
+
+      const val = document.createElement('span');
+      val.className = 'value';
+      val.textContent = item.date.toLocaleString([], { month:'short', day:'2-digit', hour:'2-digit', minute:'2-digit' });
+
+      li.appendChild(label);
+      li.appendChild(val);
+      listEl.appendChild(li);
+    });
+  }
+
+  async function init(lat = 0, lon = 0, usedGeo = false) {
+    setRotationAndTimes(lat, lon);
+    if (hintEl) hintEl.textContent = usedGeo ? 'Using your location.' : 'Using a generic orientation.';
+    setInterval(() => setRotationAndTimes(lat, lon), 10 * 60 * 1000);
+
+    const phases = await findNextPhaseDates();
+    renderNextPhases(phases);
+  }
+
+  if (typeof navigator !== 'undefined' && navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(
+      (pos) => init(pos.coords.latitude, pos.coords.longitude, true),
+      ()    => init(),
+      { enableHighAccuracy: false, timeout: 6000, maximumAge: 300000 }
+    );
+  } else {
+    init();
+  }
+</script>

@@ -1,0 +1,362 @@
+{
+    "2024": [
+        {
+            "monthName": "Febrero",
+            "firstDayMonth": "4",
+            "daysMonth": "29",
+            "nameDay": [
+                "Lunes",
+                "Martes",
+                "Miércoles",
+                "Jueves",
+                "Viernes",
+                "Sábado",
+                "Domingo"
+            ],
+            "nameMonth": [
+                "Enero",
+                "Febrero",
+                "Marzo",
+                "Abril",
+                "Mayo",
+                "Junio",
+                "Julio",
+                "Agosto",
+                "Septiembre",
+                "Octubre",
+                "Noviembre",
+                "Diciembre"
+            ],
+            "phase": {
+                "1": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 64.42789921737861,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A -13.72,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 401252.6682397556,
+                    "dayWeek": 3,
+                    "npWidget": "Menguante (64%)"
+                },
+                "2": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 54.923759419728924,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A -3.92,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 398064.8468059912,
+                    "dayWeek": 4,
+                    "npWidget": "Menguante (54%)"
+                },
+                "3": {
+                    "phaseName": "Cuarto menguante",
+                    "isPhaseLimit": 4,
+                    "lighting": 45.01122017644028,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 4.9,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": "<svg xmlns='http:\/\/www.w3.org\/2000\/svg' width='20' height='20' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48'  stroke-width='0' fill='#111111' \/><path d='M50,2 A48,48 0 0,0 50,98'  stroke-width='0' fill='#FFFF88' \/><\/svg>",
+                    "timeEvent": "0:20:08",
+                    "dis": 394149.6732060724,
+                    "dayWeek": 5,
+                    "npWidget": "Cuarto menguante"
+                },
+                "4": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 35.009800069738986,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 14.7,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 389671.9409194724,
+                    "dayWeek": 6,
+                    "npWidget": "Menguante (35%)"
+                },
+                "5": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 25.31572066065327,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 24.5,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 384845.4588317965,
+                    "dayWeek": 0,
+                    "npWidget": "Menguante (25%)"
+                },
+                "6": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 16.41951781319332,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 33.32,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 379926.1260930855,
+                    "dayWeek": 1,
+                    "npWidget": "Menguante (16%)"
+                },
+                "7": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 8.899528014949842,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 41.16,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 375197.14380148804,
+                    "dayWeek": 2,
+                    "npWidget": "Menguante (8%)"
+                },
+                "8": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 3.373336095183893,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 46.06,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 370947.664630484,
+                    "dayWeek": 3,
+                    "npWidget": "Menguante (3%)"
+                },
+                "9": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 0.4008207886076254,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 1,0 49,99 A 49,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 367447.9458357998,
+                    "dayWeek": 4,
+                    "npWidget": "Menguante (0%)"
+                },
+                "10": {
+                    "phaseName": "Luna nueva",
+                    "isPhaseLimit": 1,
+                    "lighting": 0.35862881449449935,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 49,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": "<svg xmlns='http:\/\/www.w3.org\/2000\/svg' width='20' height='20' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48'  stroke-width='0' fill='#111111' \/><path d='M50,2 A48,48 0 0,0 50,98'  stroke-width='0' fill='#111111' \/><\/svg>",
+                    "timeEvent": "0:00:44",
+                    "dis": 364924.9031164658,
+                    "dayWeek": 5,
+                    "npWidget": "Luna nueva"
+                },
+                "11": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 3.3337059599294285,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 46.06,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 363541.6676826244,
+                    "dayWeek": 6,
+                    "npWidget": "Creciente (3%)"
+                },
+                "12": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 9.087846606541133,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 40.18,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 363383.65657663427,
+                    "dayWeek": 0,
+                    "npWidget": "Creciente (9%)"
+                },
+                "13": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 17.113066262596348,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 32.34,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 364452.3591108483,
+                    "dayWeek": 1,
+                    "npWidget": "Creciente (17%)"
+                },
+                "14": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 26.749173068839642,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 23.52,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 366666.97255539946,
+                    "dayWeek": 2,
+                    "npWidget": "Creciente (26%)"
+                },
+                "15": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 37.308198948408204,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 12.74,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 369873.2990495451,
+                    "dayWeek": 3,
+                    "npWidget": "Creciente (37%)"
+                },
+                "16": {
+                    "phaseName": "Cuarto creciente",
+                    "isPhaseLimit": 2,
+                    "lighting": 48.161915434991826,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A 1.96,49 0 1,0 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": "<svg xmlns='http:\/\/www.w3.org\/2000\/svg' width='20' height='20' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48'  stroke-width='0' fill='#FFFF88' \/><path d='M50,2 A48,48 0 0,0 50,98'  stroke-width='0' fill='#111111' \/><\/svg>",
+                    "timeEvent": "16:02:06",
+                    "dis": 373858.778147561,
+                    "dayWeek": 4,
+                    "npWidget": "Cuarto creciente"
+                },
+                "17": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 58.78055952786544,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A -7.84,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 378371.97194663057,
+                    "dayWeek": 5,
+                    "npWidget": "Creciente (58%)"
+                },
+                "18": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 68.73571829996749,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A -17.64,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 383144.2178669942,
+                    "dayWeek": 6,
+                    "npWidget": "Creciente (68%)"
+                },
+                "19": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 77.6869541950217,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A -26.46,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 387910.7240950786,
+                    "dayWeek": 0,
+                    "npWidget": "Creciente (77%)"
+                },
+                "20": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 85.36616497660832,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A -34.3,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 392428.40416416293,
+                    "dayWeek": 1,
+                    "npWidget": "Creciente (85%)"
+                },
+                "21": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 91.5657570211789,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A -40.18,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 396488.4006926546,
+                    "dayWeek": 2,
+                    "npWidget": "Creciente (91%)"
+                },
+                "22": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 96.13160895041646,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A -45.08,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 399922.42877929803,
+                    "dayWeek": 3,
+                    "npWidget": "Creciente (96%)"
+                },
+                "23": {
+                    "phaseName": "Creciente",
+                    "isPhaseLimit": false,
+                    "lighting": 98.95974458315354,
+                    "svg": "<svg width=\"100\" height=\"100\" viewBox=\"0 0 100 100\"><g><circle cx=\"50\" cy=\"50\" r=\"49\" stroke=\"none\"  fill=\"#111111\"\/><path d=\"M 50 1 A 49,49 0 0,1 49,99 A -47.04,49 0 0,1 50,1\" stroke-width=\"0\" stroke=\"none\" fill=\"#FFFF88\" \/><a xlink:href=\"https:\/\/www.icalendar37.net\/lunar\/app\/\" rel=\"noopener noreferrer\" target=\"_blank\"><circle cx=\"50\" cy=\"50\" r=\"49\" style=\"pointer-events:all;cursor:pointer\" stroke-width=\"0\"   fill=\"transparent\" \/><\/a><\/g><\/svg>",
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 402603.4289316007,
+                    "dayWeek": 4,
+                    "npWidget": "Creciente (98%)"
+                },
+                "24": {
+                    "phaseName": "Luna llena",
+                    "isPhaseLimit": 3,
+                    "lighting": 99.99511405280604,
+                    "svgMini": "<svg xmlns='http:\/\/www.w3.org\/2000\/svg' width='20' height='20' viewBox='0 0 100 100'><circle cx='50' cy='50' r='48'  stroke-width='0' fill='#FFFF88' \/><path d='M50,2 A48,48 0 0,0 50,98'  stroke-width='0' fill='#FFFF88' \/><\/svg>",
+                    "timeEvent": "13:31:19",
+                    "dis": 404442.14635148045,
+                    "dayWeek": 5,
+                    "npWidget": "Luna llena"
+                },
+                "25": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 99.23084687889236,
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 405381.8653009727,
+                    "dayWeek": 6,
+                    "npWidget": "Menguante (99%)"
+                },
+                "26": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 96.70658436026905,
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 405393.55385585927,
+                    "dayWeek": 0,
+                    "npWidget": "Menguante (96%)"
+                },
+                "27": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 92.50516059516183,
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 404473.2124200252,
+                    "dayWeek": 1,
+                    "npWidget": "Menguante (92%)"
+                },
+                "28": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 86.7479693243445,
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 402642.42819884914,
+                    "dayWeek": 2,
+                    "npWidget": "Menguante (86%)"
+                },
+                "29": {
+                    "phaseName": "Menguante",
+                    "isPhaseLimit": false,
+                    "lighting": 79.59053076310379,
+                    "svgMini": false,
+                    "timeEvent": false,
+                    "dis": 399952.16262138763,
+                    "dayWeek": 3,
+                    "npWidget": "Menguante (79%)"
+                }
+            },
+            "month": 2,
+            "year": 2024,
+            "receivedVariables": {
+                "lang": "es",
+                "month": "2",
+                "year": "2024"
+            },
+            "lang": "es",
+            "language": "Español",
+            "title": [
+                "Calencario lunar",
+                "Fases de la Luna"
+            ],
+            "autor": "wdisseny.com",
+            "version": "2"
+        }
+    ]
+}

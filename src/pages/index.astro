@@ -1,0 +1,25 @@
+---
+
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<link rel="icon" type="image/x-icon" href="/favicon.ico" />
+		<title>Magic Moon</title>
+		<meta name="description" content="Magic Moon is a simple, beautiful, and free moon phase calendar.">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:title" content="Magic Moon">
+		<meta property="og:description" content="Magic Moon is a simple, beautiful, and free moon phase calendar.">
+	</head>
+	<body transition:animate="fade">
+		<script type="text/javascript">
+			const today = new Date();
+            fetch(`/day/${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}/index.html`)
+				.then(response => response.text())
+				.then(data => {
+					document.write(data);
+				});
+		</script>
+	</body>
+</html>
