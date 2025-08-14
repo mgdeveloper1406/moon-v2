@@ -11,7 +11,6 @@ interface Props {
 const { phaseName, percentage, shadow, animate } = Astro.props;
 
 const isWaning = [PhaseName.Waning, PhaseName.LastQuarter, PhaseName.NewMoon].includes(phaseName);
-
 const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phaseName)
   ? 50
   : Math.floor(Number(percentage) - 50) * 0.84 + 0.16;
@@ -27,7 +26,7 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
     `
   ></div>
 
-  <!-- El terminador se rota dinámicamente con JS -->
+  <!-- The terminator rotation is applied via JS -->
   <div
     id="moon-shape"
     class:list={[
@@ -55,8 +54,6 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
 
 <section class="info">
   <div class="row">
-    <!-- Puedes poner aquí el nombre de fase si lo renderizas fuera -->
-    <!-- <span class="phase">{String(phaseName)}</span> -->
     <span class="pct">{Math.round(percentage)}%</span>
   </div>
 
@@ -70,19 +67,16 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
 </section>
 
 <style>
-  /* Canvas y textura */
   .stage { width: 100%; display: inline-block; perspective: 400%; perspective-origin: 50% 50%; }
   #moon { width: 100%; height: 100%; background-image: url("/moon.webp"); background-position-y: center; background-size: 250% auto; border-radius: 50%; transform: rotate(170deg); }
   @keyframes move-map { 0% { background-position-x: -67%; } 100% { background-position-x: 100%; } }
 
-  /* Info y tipografías fluidas */
   .info { text-align: center; margin-top: 14px; color: #e5e7eb; font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, sans-serif; padding: 0 12px; }
   .row { font-weight: 800; font-size: clamp(20px, 3.5vw, 32px); line-height: 1.15; word-break: break-word; }
   .pct { font-size: clamp(12px, 2.2vw, 16px); opacity: .85; }
   .sub { margin-top: 6px; font-size: 14px; color: #a5b4fc; }
   .tiny { margin-top: 4px; font-size: 12px; color: #94a3b8; }
 
-  /* Lista responsive de próximas fases */
   .list { margin: 16px auto 0; max-width: 880px; background:#0b1220; border:1px solid #1f2937; border-radius:12px; padding:12px; }
   .list-title { color:#93c5fd; font-weight:800; font-size: clamp(12px, 1.8vw, 14px); margin-bottom:8px; text-transform:uppercase; letter-spacing:.4px; }
   .ul { list-style:none; padding:0; margin:0; display:grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap:10px; }
@@ -92,30 +86,8 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
 </style>
 
 <script>
-  // @ts-nocheck  (por si astro check intenta tipar este bloque)
+  // @ts-nocheck
   import SunCalc from 'suncalc';
-
-  // i18n simple (auto ES/EN según navegador)
-  const lang = (typeof navigator !== 'undefined' && navigator.language || 'en')
-    .toLowerCase().startsWith('es') ? 'es' : 'en';
-
-  const I18N = {
-    es: {
-      usingLoc: 'Usando tu ubicación.',
-      generic: 'Usando orientación genérica.',
-      riseSet: (r, s) => `Salida ${r} / Puesta ${s}`,
-      nextPhases: 'Próximas fases',
-      phases: ['Luna Nueva','Cuarto Creciente','Luna Llena','Cuarto Menguante'],
-    },
-    en: {
-      usingLoc: 'Using your location.',
-      generic: 'Using a generic orientation.',
-      riseSet: (r, s) => `Rise ${r} / Set ${s}`,
-      nextPhases: 'Next phases',
-      phases: ['New Moon','First Quarter','Full Moon','Last Quarter'],
-    }
-  };
-  const T = I18N[lang];
 
   const shape   = document.getElementById('moon-shape');
   const timesEl = document.getElementById('moonTimes');
@@ -123,7 +95,9 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
   const listEl  = document.getElementById('nextPhases');
   const nextTitleEl = document.getElementById('nextTitle');
 
-  if (nextTitleEl) nextTitleEl.textContent = T.nextPhases;
+  // Fixed English labels
+  const PHASE_NAMES = ['New Moon','First Quarter','Full Moon','Last Quarter'];
+  if (nextTitleEl) nextTitleEl.textContent = 'Next phases';
 
   function setRotationAndTimes(lat = 0, lon = 0) {
     const now = new Date();
@@ -137,13 +111,12 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
       const mt = SunCalc.getMoonTimes(now, lat, lon);
       const riseTxt = mt.rise ? new Date(mt.rise).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—';
       const setTxt  = mt.set  ? new Date(mt.set ).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' }) : '—';
-      if (timesEl) timesEl.textContent = T.riseSet(riseTxt, setTxt);
+      if (timesEl) timesEl.textContent = `Rise ${riseTxt} / Set ${setTxt}`;
     } catch {
-      if (timesEl) timesEl.textContent = T.riseSet('—','—');
+      if (timesEl) timesEl.textContent = `Rise — / Set —`;
     }
   }
 
-  // Próximas fases (búsqueda numérica local, sin API)
   const TARGETS = [
     { key: 0, value: 0.0  }, // New
     { key: 1, value: 0.25 }, // First Quarter
@@ -164,7 +137,6 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
       let minErr = 1e9;
       let candidate = new Date(start);
 
-      // barrido 60 días, 4 muestras por día
       for (let d = 0; d < 60; d++) {
         const test = new Date(start.getTime() + d * 86400000);
         for (let h = 0; h < 24; h += 6) {
@@ -174,7 +146,6 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
           if (err < minErr) { minErr = err; candidate = dt; }
         }
       }
-      // afinado binario ±36h
       let lo = new Date(candidate.getTime() - 36 * 3600 * 1000);
       let hi = new Date(candidate.getTime() + 36 * 3600 * 1000);
       for (let i = 0; i < 22; i++) {
@@ -198,7 +169,7 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
 
       const label = document.createElement('span');
       label.className = 'label';
-      label.textContent = T.phases[item.label];
+      label.textContent = PHASE_NAMES[item.label];
 
       const val = document.createElement('span');
       val.className = 'value';
@@ -212,7 +183,7 @@ const percentageToRender = [PhaseName.NewMoon, PhaseName.FullMoon].includes(phas
 
   function init(lat = 0, lon = 0, usedGeo = false) {
     setRotationAndTimes(lat, lon);
-    if (hintEl) hintEl.textContent = usedGeo ? T.usingLoc : T.generic;
+    if (hintEl) hintEl.textContent = usedGeo ? 'Using your location.' : 'Using a generic orientation.';
     setInterval(() => setRotationAndTimes(lat, lon), 10 * 60 * 1000);
     findNextPhaseDates().then(renderNextPhases);
   }
