@@ -14,7 +14,7 @@ export const i18n = {
         November: "Noviembre",
         December: "Diciembre",
         "First quarter": "Cuarto creciente",
-        "Full moon": "Luna llena",
+        "Full moon": "Fool Moon",
         "Last quarter": "Cuarto menguante",
         "New Moon": "Luna nueva",
         "Waning": "Menguante",
